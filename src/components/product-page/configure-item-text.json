@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_product_page_configure_item_texts",
+  "info": {
+    "displayName": "Configure Item Text"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

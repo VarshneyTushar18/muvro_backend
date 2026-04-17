@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_product_page_workflows",
+  "info": {
+    "displayName": "Workflow"
+  },
+  "options": {},
+  "attributes": {
+    "sectionHeader": {
+      "type": "component",
+      "component": "shared.section-header",
+      "repeatable": false
+    },
+    "items": {
+      "type": "component",
+      "component": "product-page.workflow-items",
+      "repeatable": true,
+      "max": 4
+    }
+  },
+  "config": {}
+}

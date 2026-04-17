@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "why_muvro_pages",
+  "info": {
+    "singularName": "why-muvro-page",
+    "pluralName": "why-muvro-pages",
+    "displayName": "Why Muvro Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sectionHeader": {
+      "type": "component",
+      "component": "shared.section-header",
+      "repeatable": false
+    },
+    "bannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "bannerTitle": {
+      "type": "string",
+      "required": true
+    },
+    "bannerContent": {
+      "type": "blocks",
+      "required": true
+    },
+    "item": {
+      "type": "component",
+      "component": "why-us-page.card-item",
+      "repeatable": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

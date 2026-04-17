@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_shared_ctas",
+  "info": {
+    "displayName": "CTA"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "queryText": {
+      "type": "string",
+      "default": "Having Queries? Call Us Now",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "string",
+      "default": "+91 (0) 9289 071 715",
+      "required": true
+    }
+  },
+  "config": {}
+}

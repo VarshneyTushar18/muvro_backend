@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "download_pages",
+  "info": {
+    "singularName": "download-page",
+    "pluralName": "download-pages",
+    "displayName": "Download Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sectionHeader": {
+      "type": "component",
+      "component": "shared.section-header",
+      "repeatable": false
+    },
+    "catalougeItem": {
+      "type": "component",
+      "component": "downloads-page.download-item",
+      "repeatable": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

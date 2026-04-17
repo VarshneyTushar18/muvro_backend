@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_product_page_system_specifications",
+  "info": {
+    "displayName": "System Specifications"
+  },
+  "options": {},
+  "attributes": {
+    "sectionHeader": {
+      "type": "component",
+      "component": "shared.section-header",
+      "repeatable": false
+    },
+    "specifications": {
+      "type": "component",
+      "component": "product-page.specifications",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

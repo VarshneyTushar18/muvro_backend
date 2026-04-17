@@ -1,0 +1,120 @@
+{
+  "kind": "collectionType",
+  "collectionName": "product_pages",
+  "info": {
+    "singularName": "product-page",
+    "pluralName": "product-pages",
+    "displayName": "Product Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "productName": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "productName",
+      "required": true
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "transparentImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "bannerSection": {
+      "type": "component",
+      "component": "product-page.banner",
+      "repeatable": false
+    },
+    "introductionSection": {
+      "type": "component",
+      "component": "product-page.introduction",
+      "repeatable": false
+    },
+    "keyFeaturesSection": {
+      "type": "component",
+      "component": "product-page.key-features",
+      "repeatable": false
+    },
+    "systemDetailsSection": {
+      "type": "component",
+      "component": "product-page.system-details",
+      "repeatable": false
+    },
+    "whyChooseUsSection": {
+      "type": "component",
+      "component": "product-page.why-choose-us",
+      "repeatable": false
+    },
+    "workflowSection": {
+      "type": "component",
+      "component": "product-page.workflow",
+      "repeatable": false
+    },
+    "configureOptionsSection": {
+      "type": "component",
+      "component": "product-page.configure-options",
+      "repeatable": false
+    },
+    "tabLayoutSection": {
+      "type": "component",
+      "component": "product-page.tab-layout",
+      "repeatable": false
+    },
+    "systemSpecificationsSection": {
+      "type": "component",
+      "component": "product-page.system-specifications",
+      "repeatable": false
+    },
+    "industryApplicationsSection": {
+      "type": "component",
+      "component": "product-page.industry-applications",
+      "repeatable": false
+    },
+    "systemVersatilitySection": {
+      "type": "component",
+      "component": "product-page.system-versatility",
+      "repeatable": false
+    },
+    "availableDesignsSection": {
+      "type": "component",
+      "component": "product-page.available-designs",
+      "repeatable": false
+    },
+    "technicalSpecificationsSection": {
+      "type": "component",
+      "component": "product-page.technical-specifications",
+      "repeatable": false
+    },
+    "keyComponentsSection": {
+      "type": "component",
+      "component": "product-page.key-components",
+      "repeatable": false
+    },
+    "productGallerySection": {
+      "type": "component",
+      "component": "product-page.product-gallery",
+      "repeatable": false
+    },
+    "ctaSection": {
+      "type": "component",
+      "component": "shared.cta",
+      "repeatable": false
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

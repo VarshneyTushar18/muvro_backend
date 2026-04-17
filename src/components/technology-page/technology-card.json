@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_technology_page_technology_cards",
+  "info": {
+    "displayName": "Technology Card"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "products": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product-page.product-page"
+    }
+  },
+  "config": {}
+}

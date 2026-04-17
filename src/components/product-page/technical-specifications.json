@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_product_page_technical_specifications",
+  "info": {
+    "displayName": "Technical Specifications"
+  },
+  "options": {},
+  "attributes": {
+    "sectionHeader": {
+      "type": "component",
+      "component": "shared.section-header",
+      "repeatable": false
+    },
+    "item": {
+      "type": "component",
+      "component": "product-page.techinical-specifications-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

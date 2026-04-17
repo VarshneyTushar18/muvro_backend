@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_our_history_page_history_timelines",
+  "info": {
+    "displayName": "History Timeline"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "integer",
+      "required": true,
+      "min": 1950,
+      "max": 3000
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

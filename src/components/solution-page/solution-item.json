@@ -1,0 +1,61 @@
+{
+  "collectionName": "components_solution_page_solution_items",
+  "info": {
+    "displayName": "solutionItem"
+  },
+  "options": {},
+  "attributes": {
+    "itemTitle": {
+      "type": "string",
+      "required": true
+    },
+    "itemDescription": {
+      "type": "text",
+      "required": true
+    },
+    "itemImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "hasMultipleProduct": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "product_page": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::product-page.product-page",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "hasMultipleProduct"
+            },
+            false
+          ]
+        }
+      }
+    },
+    "product_pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product-page.product-page",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "hasMultipleProduct"
+            },
+            true
+          ]
+        }
+      }
+    }
+  },
+  "config": {}
+}

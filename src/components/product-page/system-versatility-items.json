@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_product_page_system_versatility_items",
+  "info": {
+    "displayName": "System Versatility Items"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

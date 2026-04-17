@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_product_page_tab_layouts",
+  "info": {
+    "displayName": "Tab Layout"
+  },
+  "options": {},
+  "attributes": {
+    "tabs": {
+      "type": "component",
+      "component": "product-page.tabs",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

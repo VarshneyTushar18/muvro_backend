@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_product_page_specifications",
+  "info": {
+    "displayName": "specifications"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "content": {
+      "type": "blocks",
+      "required": true
+    }
+  },
+  "config": {}
+}

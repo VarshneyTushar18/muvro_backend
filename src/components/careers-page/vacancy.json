@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_careers_page_vacancies",
+  "info": {
+    "displayName": "Vacancy"
+  },
+  "options": {},
+  "attributes": {
+    "vacancyFor": {
+      "type": "string",
+      "required": true
+    },
+    "workExperience": {
+      "type": "string",
+      "required": true
+    },
+    "noOfPositions": {
+      "type": "integer",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "qualification": {
+      "type": "string",
+      "required": true
+    },
+    "salary": {
+      "type": "string",
+      "required": true
+    },
+    "requiredSkills": {
+      "type": "text",
+      "required": true
+    },
+    "jobProfile": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "our_values_pages",
+  "info": {
+    "singularName": "our-values-page",
+    "pluralName": "our-values-pages",
+    "displayName": "Our Values Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sectionHeader": {
+      "type": "component",
+      "component": "shared.section-header",
+      "repeatable": false
+    },
+    "valueCard": {
+      "type": "component",
+      "component": "our-values-page.value-card",
+      "repeatable": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}
