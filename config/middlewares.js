@@ -1,12 +1,19 @@
 module.exports = [
-  'strapi::logger',
   'strapi::errors',
   'strapi::security',
+  {
+    name: 'strapi::session',
+    config: {
+      cookie: {
+        secure: false, // 🔥 MAIN FIX
+      },
+    },
+  },
   'strapi::cors',
   'strapi::poweredBy',
+  'strapi::logger',
   'strapi::query',
   'strapi::body',
-  'strapi::session',
   'strapi::favicon',
   'strapi::public',
 ];
