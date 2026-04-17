@@ -5,7 +5,7 @@ module.exports = [
     name: 'strapi::session',
     config: {
       cookie: {
-        secure: false, // 🔥 MAIN FIX
+        secure: true, // ✅ FIXED (NOT false)
       },
     },
   },

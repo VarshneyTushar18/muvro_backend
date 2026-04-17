@@ -2,6 +2,9 @@ module.exports = ({ env }) => ({
   host: env('HOST', '0.0.0.0'),
   port: env.int('PORT', 1337),
 
+  url: env('PUBLIC_URL'), // 🔥 REQUIRED
+  proxy: true,            // 🔥 REQUIRED
+
   app: {
     keys: env.array('APP_KEYS'),
   },
@@ -9,6 +12,4 @@ module.exports = ({ env }) => ({
   webhooks: {
     populateRelations: env.bool('WEBHOOKS_POPULATE_RELATIONS', false),
   },
-
-  proxy: true, // 🔥 REQUIRED for Render
 });
