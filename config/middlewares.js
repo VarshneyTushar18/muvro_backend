@@ -6,13 +6,7 @@ module.exports = ({ env }) => [
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
-  // Custom middleware to set ctx.secure based on proxy headers
-  (ctx, next) => {
-    if (ctx.get('X-Forwarded-Proto') === 'https') {
-      ctx.secure = true;
-    }
-    return next();
-  },
+  'global::proxy-secure',
   {
     name: 'strapi::session',
     config: {
