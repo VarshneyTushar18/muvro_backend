@@ -6,7 +6,12 @@ module.exports = [
   'strapi::poweredBy',
   'strapi::query',
   'strapi::body',
-  'strapi::session',
+  {
+    name: 'strapi::session',
+    config: {
+      secure: false, // Allow cookies over HTTP for development
+    },
+  },
   'strapi::favicon',
   'strapi::public',
 ];
