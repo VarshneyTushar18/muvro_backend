@@ -9,7 +9,7 @@ module.exports = [
   {
     name: 'strapi::session',
     config: {
-      secure: (ctx) => ctx.secure, // Dynamically check if connection is secure
+      secure: (ctx) => ctx.protocol === 'https' || ctx.get('X-Forwarded-Proto') === 'https',
     },
   },
   'strapi::favicon',
