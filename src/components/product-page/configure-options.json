@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_product_page_configure_options",
+  "info": {
+    "displayName": "Configure Options"
+  },
+  "options": {},
+  "attributes": {
+    "sectionHeader": {
+      "type": "component",
+      "component": "shared.section-header",
+      "repeatable": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "configureItems": {
+      "type": "component",
+      "component": "product-page.configure-items",
+      "repeatable": true
+    },
+    "slider": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "solution_pages",
+  "info": {
+    "singularName": "solution-page",
+    "pluralName": "solution-pages",
+    "displayName": "Solution Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sectionHeader": {
+      "type": "component",
+      "component": "shared.section-header",
+      "repeatable": false
+    },
+    "solution": {
+      "type": "component",
+      "component": "solution-page.solution",
+      "repeatable": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

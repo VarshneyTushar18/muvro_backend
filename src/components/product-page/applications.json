@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_product_page_applications",
+  "info": {
+    "displayName": "Applications"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

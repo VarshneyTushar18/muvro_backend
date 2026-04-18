@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_product_page_configure_items",
+  "info": {
+    "displayName": "Configure Items"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "configureItemsTexts": {
+      "type": "component",
+      "component": "product-page.configure-item-text",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

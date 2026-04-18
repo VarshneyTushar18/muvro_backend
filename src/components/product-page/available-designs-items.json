@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_product_page_available_designs_items",
+  "info": {
+    "displayName": "Available Designs Items"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_solution_page_solutions",
+  "info": {
+    "displayName": "Solution"
+  },
+  "options": {},
+  "attributes": {
+    "solutionName": {
+      "type": "string",
+      "required": true
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "solutionBannerName": {
+      "type": "string"
+    },
+    "solutionBannerImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "solutionItem": {
+      "type": "component",
+      "component": "solution-page.solution-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "case_studies",
+  "info": {
+    "singularName": "case-study",
+    "pluralName": "case-studies",
+    "displayName": "Case Study"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "projectName": {
+      "type": "string",
+      "default": "Project Name:",
+      "required": true
+    },
+    "projectYear": {
+      "type": "string",
+      "default": "Project Year: ",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "shortDescription": {
+      "type": "text",
+      "required": true
+    },
+    "content": {
+      "type": "blocks",
+      "required": true
+    },
+    "feedbackAuthor": {
+      "type": "string"
+    },
+    "feedback": {
+      "type": "blocks",
+      "required": false
+    },
+    "ctaSection": {
+      "type": "component",
+      "component": "shared.cta",
+      "repeatable": false
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

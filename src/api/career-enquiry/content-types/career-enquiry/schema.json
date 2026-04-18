@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "career_enquiries",
+  "info": {
+    "singularName": "career-enquiry",
+    "pluralName": "career-enquiries",
+    "displayName": "Career Enquiry"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullName": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "string",
+      "required": true
+    },
+    "currentCTC": {
+      "type": "string",
+      "required": true
+    },
+    "experience": {
+      "type": "string",
+      "required": true
+    },
+    "currentLocation": {
+      "type": "string",
+      "required": true
+    },
+    "resume": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios",
+        "files"
+      ]
+    },
+    "applyingFor": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

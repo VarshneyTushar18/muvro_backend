@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_downloads_page_download_items",
+  "info": {
+    "displayName": "Download Item"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "catalouge": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

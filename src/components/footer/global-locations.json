@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_footer_global_locations",
+  "info": {
+    "displayName": "Global Locations"
+  },
+  "options": {},
+  "attributes": {
+    "address": {
+      "type": "text",
+      "required": true
+    },
+    "email": {
+      "type": "email"
+    },
+    "phoneNumber": {
+      "type": "string",
+      "required": false
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "flag": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "mapEmbedUrl": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

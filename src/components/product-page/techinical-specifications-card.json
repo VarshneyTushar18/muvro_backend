@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_product_page_techinical_specifications_cards",
+  "info": {
+    "displayName": "Techinical Specifications Card"
+  },
+  "options": {},
+  "attributes": {
+    "heading": {
+      "type": "string",
+      "required": true
+    },
+    "specifications": {
+      "type": "component",
+      "component": "product-page.technical-specifications-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

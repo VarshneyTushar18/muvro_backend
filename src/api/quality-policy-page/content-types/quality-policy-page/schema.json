@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "quality_policy_pages",
+  "info": {
+    "singularName": "quality-policy-page",
+    "pluralName": "quality-policy-pages",
+    "displayName": "Quality Policy Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sectionHeader": {
+      "type": "component",
+      "component": "shared.section-header",
+      "repeatable": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "policyPoints": {
+      "type": "component",
+      "component": "quality-policy-page.policy-points",
+      "repeatable": true,
+      "required": true
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}

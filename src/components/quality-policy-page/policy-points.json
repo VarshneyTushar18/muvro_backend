@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_quality_policy_page_policy_points",
+  "info": {
+    "displayName": "Policy Points",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_product_page_technical_specifications_items",
+  "info": {
+    "displayName": "Technical Specifications Item"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "specification": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

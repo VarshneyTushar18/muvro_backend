@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "productName": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "productName",
+      "required": true
+    },
+    "tagline": {
+      "type": "string"
+    },
+    "transparentImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "pageSections": {
+      "type": "dynamiczone",
+      "components": [
+        "product-page.banner",
+        "product-page.introduction",
+        "product-page.key-features",
+        "product-page.system-details",
+        "product-page.why-choose-us",
+        "product-page.workflow",
+        "product-page.configure-options",
+        "product-page.tab-layout",
+        "product-page.system-specifications",
+        "product-page.industry-applications",
+        "product-page.system-versatility",
+        "product-page.available-designs",
+        "product-page.technical-specifications",
+        "product-page.key-components",
+        "product-page.product-gallery",
+        "shared.cta"
+      ],
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "repeatable": false
+    }
+  }
+}
