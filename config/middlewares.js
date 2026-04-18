@@ -9,7 +9,7 @@ module.exports = [
   {
     name: 'strapi::session',
     config: {
-      secure: false, // Allow cookies over HTTP for development
+      secure: (ctx) => ctx.secure, // Dynamically check if connection is secure
     },
   },
   'strapi::favicon',
