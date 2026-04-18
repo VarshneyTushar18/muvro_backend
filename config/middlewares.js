@@ -1,4 +1,4 @@
-module.exports = [
+module.exports = ({ env }) => [
   'strapi::logger',
   'strapi::errors',
   'strapi::security',
@@ -9,7 +9,7 @@ module.exports = [
   {
     name: 'strapi::session',
     config: {
-      secure: (ctx) => ctx.protocol === 'https' || ctx.get('X-Forwarded-Proto') === 'https',
+      secure: false, // Set to false for HTTPS deployments behind load balancers like Render
     },
   },
   'strapi::favicon',
