@@ -27,7 +27,7 @@ module.exports = {
     // Force the socket to be treated as encrypted for proxy setups
     strapi.server.use(async (ctx, next) => {
       if (ctx.req?.socket) {
-        (ctx.req.socket as any).encrypted = true;
+        (ctx.req.socket).encrypted = true;
       }
       await next();
     });
