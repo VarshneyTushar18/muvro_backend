@@ -3,6 +3,9 @@ const path = require('path');
 module.exports = ({ env }) => {
   const client = env('DATABASE_CLIENT', 'sqlite');
 
+
+  console.log("DATABASE_URL:", process.env.DATABASE_URL); // 👈 ADD THIS
+
   const connections = {
     mysql: {
       connection: {
