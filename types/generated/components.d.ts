@@ -605,12 +605,12 @@ export interface SolutionPageSolutionItem extends Struct.ComponentSchema {
     itemImage: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
     itemTitle: Schema.Attribute.String & Schema.Attribute.Required;
     product_page: Schema.Attribute.Relation<
-      'oneToOne',
-      'api::product-page.product-page'
+      'manyToMany',
+      'api::product.product'
     >;
     product_pages: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::product-page.product-page'
+      'manyToMany',
+      'api::product.product'
     >;
   };
 }
@@ -637,10 +637,7 @@ export interface TechnologyPageTechnologyCard extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.Text & Schema.Attribute.Required;
     image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
-    products: Schema.Attribute.Relation<
-      'oneToMany',
-      'api::product-page.product-page'
-    >;
+    products: Schema.Attribute.Relation<'manyToMany', 'api::product.product'>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }

@@ -23,8 +23,8 @@
     },
     "products": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::product-page.product-page"
+      "relation": "manyToMany",
+      "target": "api::product.product"
     }
   },
   "config": {}

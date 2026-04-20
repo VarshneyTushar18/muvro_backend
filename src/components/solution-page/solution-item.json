@@ -28,8 +28,8 @@
     },
     "product_page": {
       "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::product-page.product-page",
+      "relation": "manyToMany",
+      "target": "api::product.product",
       "conditions": {
         "visible": {
           "==": [
@@ -43,8 +43,8 @@
     },
     "product_pages": {
       "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::product-page.product-page",
+      "relation": "manyToMany",
+      "target": "api::product.product",
       "conditions": {
         "visible": {
           "==": [
