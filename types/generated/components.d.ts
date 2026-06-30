@@ -188,7 +188,7 @@ export interface ProductPageConfigureOptions extends Struct.ComponentSchema {
     >;
     image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
     sectionHeader: Schema.Attribute.Component<'shared.section-header', false>;
-    slider: Schema.Attribute.Media<'images', true> & Schema.Attribute.Required;
+    slider: Schema.Attribute.Media<'images', true>;
   };
 }
 
@@ -247,7 +247,7 @@ export interface ProductPageKeyComponentsItem extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text & Schema.Attribute.Required;
-    image: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
+    image: Schema.Attribute.Media<'images'>;
     title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
@@ -450,7 +450,7 @@ export interface ProductPageWorkflow extends Struct.ComponentSchema {
     items: Schema.Attribute.Component<'product-page.workflow-items', true> &
       Schema.Attribute.SetMinMax<
         {
-          max: 4;
+          max: 12;
         },
         number
       >;
@@ -604,6 +604,7 @@ export interface SolutionPageSolutionItem extends Struct.ComponentSchema {
     itemDescription: Schema.Attribute.Text & Schema.Attribute.Required;
     itemImage: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
     itemTitle: Schema.Attribute.String & Schema.Attribute.Required;
+    manualLink: Schema.Attribute.String;
     product_page: Schema.Attribute.Relation<
       'manyToMany',
       'api::product.product'
