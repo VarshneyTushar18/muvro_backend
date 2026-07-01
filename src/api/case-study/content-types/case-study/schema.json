@@ -37,9 +37,14 @@
       "type": "text",
       "required": true
     },
+    "pageSections": {
+      "type": "component",
+      "component": "case-study-page.page-sections",
+      "repeatable": false
+    },
     "content": {
       "type": "blocks",
-      "required": true
+      "required": false
     },
     "feedbackAuthor": {
       "type": "string"

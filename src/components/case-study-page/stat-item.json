@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_case_study_page_stat_items",
+  "info": {
+    "displayName": "Stat Item"
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

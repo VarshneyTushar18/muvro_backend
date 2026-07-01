@@ -16,7 +16,12 @@ module.exports = ({ env }) => ({
             components: []   // list components you want to skip (if any)
           }
         },
-        
+        'api::case-study.case-study': {
+          deny: {
+            relations: [],
+            components: []
+          }
+        },
       }
     }
   }

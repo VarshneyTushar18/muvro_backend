@@ -1,0 +1,92 @@
+{
+  "collectionName": "components_case_study_page_page_sections",
+  "info": {
+    "displayName": "Page Sections"
+  },
+  "options": {},
+  "attributes": {
+    "stats": {
+      "type": "component",
+      "component": "case-study-page.stat-item",
+      "repeatable": true
+    },
+    "introHeading": {
+      "type": "string"
+    },
+    "introLabel": {
+      "type": "string",
+      "default": "01 — Project Background"
+    },
+    "introParagraphs": {
+      "type": "component",
+      "component": "case-study-page.intro-paragraph",
+      "repeatable": true
+    },
+    "productLink": {
+      "type": "string"
+    },
+    "objectives": {
+      "type": "component",
+      "component": "case-study-page.icon-text-item",
+      "repeatable": true
+    },
+    "challengesHeader": {
+      "type": "component",
+      "component": "shared.section-header",
+      "repeatable": false
+    },
+    "challenges": {
+      "type": "component",
+      "component": "case-study-page.icon-text-item",
+      "repeatable": true
+    },
+    "solutionsHeader": {
+      "type": "component",
+      "component": "shared.section-header",
+      "repeatable": false
+    },
+    "solutions": {
+      "type": "component",
+      "component": "case-study-page.solution-item",
+      "repeatable": true
+    },
+    "performanceHeader": {
+      "type": "component",
+      "component": "shared.section-header",
+      "repeatable": false
+    },
+    "performance": {
+      "type": "component",
+      "component": "case-study-page.metric-item",
+      "repeatable": true
+    },
+    "benefitsHeader": {
+      "type": "component",
+      "component": "shared.section-header",
+      "repeatable": false
+    },
+    "benefits": {
+      "type": "component",
+      "component": "case-study-page.benefit-item",
+      "repeatable": true
+    },
+    "deploymentHeader": {
+      "type": "component",
+      "component": "shared.section-header",
+      "repeatable": false
+    },
+    "deployment": {
+      "type": "component",
+      "component": "case-study-page.icon-text-item",
+      "repeatable": true
+    },
+    "conclusionText": {
+      "type": "text"
+    },
+    "conclusionLabel": {
+      "type": "string",
+      "default": "07 — Conclusion"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_case_study_page_intro_paragraphs",
+  "info": {
+    "displayName": "Intro Paragraph"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

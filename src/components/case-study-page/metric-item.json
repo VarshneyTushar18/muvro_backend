@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_case_study_page_metric_items",
+  "info": {
+    "displayName": "Metric Item"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "default": "RiCheckboxCircleLine"
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}
