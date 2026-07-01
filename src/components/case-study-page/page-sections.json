@@ -80,6 +80,11 @@
       "component": "case-study-page.icon-text-item",
       "repeatable": true
     },
+    "contentSliderSections": {
+      "type": "component",
+      "component": "case-study-page.content-slider",
+      "repeatable": true
+    },
     "conclusionText": {
       "type": "text"
     },
