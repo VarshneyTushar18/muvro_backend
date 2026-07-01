@@ -11,23 +11,10 @@
     "heading": {
       "type": "string"
     },
-    "content": {
-      "type": "blocks"
-    },
-    "imagePosition": {
-      "type": "enumeration",
-      "enum": [
-        "left",
-        "right"
-      ],
-      "default": "right"
-    },
-    "images": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": [
-        "images"
-      ]
+    "slides": {
+      "type": "component",
+      "component": "case-study-page.content-slide",
+      "repeatable": true
     }
   },
   "config": {}
