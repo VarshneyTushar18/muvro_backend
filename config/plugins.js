@@ -1,4 +1,22 @@
 module.exports = ({ env }) => ({
+  email: {
+    config: {
+      provider: 'nodemailer',
+      providerOptions: {
+        host: env('SMTP_HOST', 'smtp.example.com'),
+        port: env.int('SMTP_PORT', 587),
+        secure: env.bool('SMTP_SECURE', false),
+        auth: {
+          user: env('SMTP_USERNAME'),
+          pass: env('SMTP_PASSWORD'),
+        },
+      },
+      settings: {
+        defaultFrom: env('SMTP_DEFAULT_FROM', 'no-reply@muvro.tech'),
+        defaultReplyTo: env('SMTP_DEFAULT_REPLY_TO', 'no-reply@muvro.tech'),
+      },
+    },
+  },
   tinymce: { enabled: true },
   'seo': {
     enabled: true,
