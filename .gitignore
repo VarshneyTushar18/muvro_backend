@@ -130,3 +130,10 @@ dist
 build
 .strapi-updater.json
 .strapi-cloud.json
+
+# Local-only secrets / generated tokens (never push)
+.env.local
+.env.*.local
+.tmp/
+.tmp/**
+frontend-api-token.txt

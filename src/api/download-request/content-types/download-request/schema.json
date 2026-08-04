@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "download_requests",
+  "info": {
+    "singularName": "download-request",
+    "pluralName": "download-requests",
+    "displayName": "Download Request"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "catalogueTitle": {
+      "type": "string",
+      "required": true
+    },
+    "catalogueFileName": {
+      "type": "string",
+      "required": true
+    },
+    "catalogueUrl": {
+      "type": "text",
+      "required": true
+    },
+    "ipAddress": {
+      "type": "string"
+    }
+  }
+}
